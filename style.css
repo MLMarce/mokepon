@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+transition: all .4s;
+}
+
+.body{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.7)
+    )
+    ,url("/img/fondo-hexagonal-profesional_763713-3988.avif");
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
+}
+
+.container {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 5%;
+    color: #4ff;
+    text-shadow: 0 0 5px #4ff, 0 0 10px #4ffd, 0 0 20px #4ff8;
+
+}
+
+#seleccionar-mascota {
+    position: relative;
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    margin: 20px;
+    margin-top: 0;
+    color: rgb(78, 228, 251);
+}
+
+.mascotas {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hipodoge, .capipepo, .ratigueya {
+    width: 30%;
+    height: 90%;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.hipodoge:hover, .capipepo:hover, .ratigueya:hover{
+    box-shadow: 0 0 10px #4ff;
+}
+
+.hipodoge {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    )
+    ,url("/img/mokepons_mokepon_hipodoge_attack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.hipodoge:hover {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.0),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/mokepons_mokepon_hipodoge_attack.png");
+}
+.capipepo {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    )
+    ,url("/img/mokepons_mokepon_capipepo_attack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.capipepo:hover {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.0),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/mokepons_mokepon_capipepo_attack.png");
+}
+.ratigueya {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.3)
+    )
+    ,url("/img/mokepons_mokepon_ratigueya_attack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.ratigueya:hover {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.0),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/mokepons_mokepon_ratigueya_attack.png");
+}
+
+label {
+    font-size: 24px;
+    
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #4ff;
+    text-shadow: 0 0 5px #4ff;
+}
+label:checked {
+    box-shadow: 0 0 10px #4ff;
+}
+
+input {
+    display: none;
+}
+input:checked{
+    display: block;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #4ff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #4ff;
+    transition: all .2s ;
+}
+
+#boton-mascota {
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#boton-mascota:hover {
+    font-size: .9em;
+    font-weight: 600;
+    background-color: #ccc;
+    box-shadow: 0 0 5px #4ff;
+}
+
+/*ataque*/
+
+#seleccionar-ataque {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    margin-top: 30px;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.info-mascotas {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 30%;
+    margin-left: 15%;
+    justify-content: space-around;
+    text-align: left;
+}
+.info-mascotas p {
+    position: relative;
+    left: -10%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    width: 40%;
+    height: 40%;
+    color: #59e30f;
+    font-size: 1.5em;
+}
+.info-mascotas p:nth-child(2) {
+    color: rgb(238, 162, 21);
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botones button {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background: #444;
+}
+
+#boton-fuego:hover {
+    text-shadow: 0 0 5px #fa1;
+    color: #fa3;
+}
+#boton-agua:hover {
+    text-shadow: 0 0 5px #4af;
+    color: #4ad;
+}
+#boton-tierra:hover {
+    text-shadow: 0 0 5px #a61;
+    color: #a61;
+}
+
+#mensajes {
+    color: #14e4ff;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba(5, 234, 255, 0.486);
+    border-radius: 3px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.7)
+    )
+    ,url("/img/fondo-hexagonal-azul-creativo_670147-40624.avif");
+    overflow: auto;
+    overflow-wrap: normal;
+}
+
+#mensajes p {
+    margin: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#resultado {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#boton-reiniciar {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    width: 130px;
+    cursor: pointer;
+    background: #14e4ff;
+    font-family: 'Oswald', sans-serif;
+}
+
+#boton-reiniciar:hover {
+    font-size: 0.9em;
+    transition: all .4s ease-in;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="container">
+        <h1 class="titulo">Mokepon 🔥💧🌱</h1>
+
+        <section id="seleccionar-mascota">
+            <h2>Elige a tu mascota:</h2>
+
+            <div class="mascotas">
+                <div class="hipodoge">
+                    <label for="hipodoge">Hipodoge</label>
+                    <input type="radio" name="mascota" id="hipodoge">
+                </div>
+                
+                <div class="capipepo">
+                    <label for="capipepo">Capipepo</label>
+                    <input type="radio" name="mascota" id="capipepo">
+                </div>
+                
+                <div class="ratigueya">
+                    <label for="ratigueya">Ratigueya</label>
+                    <input type="radio" name="mascota" id="ratigueya">
+                </div>
+            </div>
+
+            <button id="boton-mascota">Seleccionar</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h2>Elige tu ataque</h2>
+            <div class="botones">
+                <button id="boton-fuego" >Fuego 🔥</button>
+                <button id="boton-agua" >Agua 💧</button>
+                <button id="boton-tierra" >Tierra 🌱</button>
+            </div>
+
+            <section id="mensajes">
+                <div id="resultado">Que lo disfrutes! 😊</div>
+                <div id="mensajesFinal"></div>
+            </section>
+    
+            <section id="reiniciar">
+                <button id="boton-reiniciar">Nuevo Combate</button>
+            </section>
+
+            <div class="info-mascotas">
+                <p>TU <span id="mascota-jugador"></span>  <span id="vidas-jugador">3</span> vidas</p>
+                <p>ENEMIGO <span id="mascota-enemigo"></span>  <span id="vidas-enemigo">3</span> vidas</p>
+            </div>
+            
+        </section>
+    </div>
+</body>
+</html>
